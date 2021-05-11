@@ -1,0 +1,16 @@
+@top NewlineAndEOFExample { line+ }
+
+line { Foo | emptyLine }
+emptyLine { whitespace* newLineOrEOF }
+newLineOrEOF { newline | eof }
+
+Foo { "foo" whitespace Var whitespace? newLineOrEOF }
+Var { identifier }
+
+@tokens {
+  singlespace { " " | "\t" }
+  whitespace { singlespace+ }
+  identifier { std.asciiLetter+ }
+}
+
+@external tokens newlines from "./newline-or-eof-example-tokens.js" { newline, eof }

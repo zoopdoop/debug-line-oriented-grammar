@@ -1,0 +1,20 @@
+{
+  "name": "debug-line-oriented-grammar",
+  "version": "0.0.1",
+  "author": "Doug Martin",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "lezer-generator": "^0.13.3"
+  },
+  "dependencies": {
+    "lezer": "^0.13.2"
+  },
+  "scripts": {
+    "build": "npm run build:newline && npm run build:newline-or-eof",
+    "build:newline": "lezer-generator newline-example.grammar -o newline-example",
+    "build:newline-or-eof": "lezer-generator newline-or-eof-example.grammar -o newline-or-eof-example",
+    "pretest": "npm run build",
+    "test": "node test.js"
+  }
+}
