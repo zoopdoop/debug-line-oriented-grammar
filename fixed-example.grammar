@@ -1,4 +1,4 @@
-@top NewLineExample { (lineWithNewline | emptyLine)* lineWithoutNewline? }
+@top FixedExample { (lineWithNewline | emptyLine)* lineWithoutNewline? }
 
 lineWithNewline { Foo newLine }
 lineWithoutNewline { Foo }

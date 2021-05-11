@@ -5,12 +5,12 @@ export const parser = Parser.deserialize({
   states: "#SQQOPOOO]OPO'#C^OOOO'#Ca'#CaObOPO'#CgOOOO'#C`'#C`QQOPOOOOOO'#Cg'#CgQjOPO'#C`OoOQO,58xOOOO-E6_-E6_OOOO,59R,59ROOOO-E6^-E6^OOOO,58z,58zOOOO'#C_'#C_OtOPO1G.dOOOO7+$O7+$O",
   stateData: "!P~OVPOWQOYUO~OWWO~OWQOYYO~OY[O~OX]O~OW_OUQiYQi~O",
   goto: "u[PP]adjPPPPPqTVOTR^WQTORZTSROTRXRTSOT",
-  nodeNames: "⚠ NewLineExample Foo Var",
+  nodeNames: "⚠ FixedExample Foo Var",
   maxTerm: 11,
   skippedNodes: [0],
   repeatNodeCount: 2,
   tokenData: "#U~RVXYhYZspqh!c!}x#T#Yx#Y#Z!T#Z#ox~mQW~XYhpqh~xOY~Q}QXQ!c!}x#T#oxR!YSXQ!c!}x#T#cx#c#d!f#d#oxR!kSXQ!c!}x#T#cx#c#d!w#d#oxR#OQVPXQ!c!}x#T#ox",
   tokenizers: [0, 1],
-  topRules: {"NewLineExample":[0,1]},
+  topRules: {"FixedExample":[0,1]},
   tokenPrec: 0
 })
