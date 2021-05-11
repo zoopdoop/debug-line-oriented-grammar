@@ -11,9 +11,10 @@
     "lezer": "^0.13.2"
   },
   "scripts": {
-    "build": "npm run build:newline && npm run build:newline-or-eof",
+    "build": "npm run build:newline && npm run build:newline-or-eof && npm run build:fixed",
     "build:newline": "lezer-generator newline-example.grammar -o newline-example",
     "build:newline-or-eof": "lezer-generator newline-or-eof-example.grammar -o newline-or-eof-example",
+    "build:fixed": "lezer-generator fixed-example.grammar -o fixed-example",
     "pretest": "npm run build",
     "test": "node test.js"
   }

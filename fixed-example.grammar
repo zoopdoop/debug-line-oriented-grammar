@@ -1,0 +1,15 @@
+@top NewLineExample { (lineWithNewline | emptyLine)* lineWithoutNewline? }
+
+lineWithNewline { Foo newLine }
+lineWithoutNewline { Foo }
+emptyLine { whitespace* newLine }
+newLine { "\n" }
+
+Foo { "foo" whitespace Var whitespace? }
+Var { identifier }
+
+@tokens {
+  singlespace { " " | "\t" }
+  whitespace { singlespace+ }
+  identifier { std.asciiLetter+ }
+}
